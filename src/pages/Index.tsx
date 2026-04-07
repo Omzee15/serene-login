@@ -27,6 +27,7 @@ const Index = () => {
       {/* Video Side */}
       <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden rounded-2xl bg-card">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
