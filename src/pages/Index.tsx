@@ -33,12 +33,16 @@ const Index = () => {
       {/* Login Side */}
       <div className="flex w-full lg:w-1/2 items-center justify-center p-8 sm:p-12 lg:p-16">
         <div className="w-full max-w-sm space-y-8">
-          <div className="space-y-2">
-            <h1 className="text-2xl font-semibold tracking-tight text-foreground">
-              Welcome back
-            </h1>
-            <p className="text-sm text-muted-foreground">
-              Enter your credentials to access your account
+          <div className="space-y-6">
+            <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
+            <div className="space-y-2">
+              <h1 className="text-2xl font-semibold tracking-tight text-foreground">
+                Welcome back
+              </h1>
+              <p className="text-sm text-muted-foreground">
+                Enter your credentials to access your account
+              </p>
+            </div>
             </p>
           </div>
 
