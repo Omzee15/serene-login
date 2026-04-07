@@ -17,21 +17,20 @@ const Index = () => {
   return (
     <div className="flex min-h-screen bg-background">
       {/* Video Side */}
-      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
+      <div className="hidden lg:flex lg:w-3/5 relative overflow-hidden bg-foreground/5">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="w-full h-full object-contain"
         >
           <source src="/videos/login-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-foreground/10" />
       </div>
 
       {/* Login Side */}
-      <div className="flex w-full lg:w-1/2 items-center justify-center p-8 sm:p-12 lg:p-16">
+      <div className="flex w-full lg:w-2/5 items-center justify-center p-8 sm:p-12 lg:p-16">
         <div className="w-full max-w-sm space-y-8">
           <div className="space-y-6">
             <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
