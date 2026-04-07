@@ -15,22 +15,22 @@ const Index = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex min-h-screen bg-muted/50 p-4 lg:p-5 gap-4 lg:gap-5">
       {/* Video Side */}
-      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden bg-foreground/5">
+      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden rounded-2xl bg-card p-3">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain rounded-xl"
         >
           <source src="/videos/login-bg.mp4" type="video/mp4" />
         </video>
       </div>
 
       {/* Login Side */}
-      <div className="flex w-full lg:w-[30%] items-center justify-center p-6 sm:p-10 lg:p-12 m-4 lg:m-6 rounded-2xl border border-border bg-card/50">
+      <div className="flex w-full lg:w-[30%] items-center justify-center p-6 sm:p-10 lg:p-10 rounded-2xl bg-card">
         <div className="w-full max-w-sm space-y-8">
           <div className="space-y-6">
             <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
@@ -97,7 +97,7 @@ const Index = () => {
               <div className="w-full border-t border-border" />
             </div>
             <div className="relative flex justify-center text-xs">
-              <span className="bg-background px-3 text-muted-foreground">or</span>
+              <span className="bg-card px-3 text-muted-foreground">or</span>
             </div>
           </div>
 
