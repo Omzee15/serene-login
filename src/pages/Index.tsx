@@ -41,9 +41,7 @@ const Index = () => {
               </h1>
               <p className="text-sm text-muted-foreground">
                 Enter your credentials to access your account
-              </p>
             </div>
-            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
