@@ -32,85 +32,76 @@ const Index = () => {
       {/* Login Side */}
       <div className="flex w-full lg:w-[30%] items-center justify-center p-6 sm:p-10 lg:p-10 rounded-2xl bg-card">
         <div className="w-full max-w-sm space-y-8">
-          <div className="space-y-6">
+          <div className="space-y-4">
             <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
-            <div className="space-y-2">
-              <h1 className="text-2xl font-semibold tracking-tight text-foreground">
-                Welcome back
+            <div className="space-y-2 pt-2">
+              <h1 className="text-3xl font-bold tracking-tight text-foreground leading-tight">
+                Innovations for<br />a safer tomorrow
               </h1>
               <p className="text-sm text-muted-foreground">
-                Enter your credentials to access your account
+                Sign in to experience unveiling truth.
               </p>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <div className="space-y-2">
-              <Label htmlFor="email" className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                Email
-              </Label>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
               <Input
                 id="email"
-                type="email"
-                placeholder="you@example.com"
+                type="text"
+                placeholder="Username"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-11 rounded-lg border-border bg-card focus-visible:ring-primary/30"
+                className="h-12 rounded-xl border-border bg-card focus-visible:ring-primary/30"
               />
             </div>
 
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <Label htmlFor="password" className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                  Password
-                </Label>
-                <button type="button" className="text-xs text-primary hover:text-primary/80 transition-colors">
-                  Forgot password?
-                </button>
-              </div>
+            <div>
               <div className="relative">
                 <Input
                   id="password"
                   type={showPassword ? "text" : "password"}
-                  placeholder="••••••••"
+                  placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="h-11 rounded-lg border-border bg-card pr-10 focus-visible:ring-primary/30"
+                  className="h-12 rounded-xl border-border bg-card pr-10 focus-visible:ring-primary/30"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                 </button>
               </div>
+              <button type="button" className="text-sm text-primary hover:text-primary/80 transition-colors mt-2">
+                Forgot Password?
+              </button>
             </div>
 
-            <Button type="submit" variant="brand" size="lg" className="w-full h-11 rounded-lg text-sm font-medium">
-              Sign in
-            </Button>
+            <div className="pt-2 space-y-3">
+              <Button type="submit" variant="brand" size="lg" className="w-full h-12 rounded-xl text-sm font-semibold">
+                Sign in with email
+              </Button>
+
+              <Button variant="secondary" size="lg" className="w-full h-12 rounded-xl text-sm font-medium bg-muted text-foreground hover:bg-muted/80">
+                <span className="flex flex-col items-center leading-tight">
+                  <span>Don't have an account?</span>
+                  <span className="font-semibold">Create one</span>
+                </span>
+              </Button>
+            </div>
           </form>
 
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-border" />
-            </div>
-            <div className="relative flex justify-center text-xs">
-              <span className="bg-card px-3 text-muted-foreground">or</span>
-            </div>
+          <div className="space-y-4 pt-2">
+            <div className="w-full border-t border-border" />
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              By proceeding, you acknowledge that you have read, understood, and agree to{" "}
+              <button className="text-primary hover:text-primary/80 font-medium transition-colors">Terms of Service</button>
+              {" "}and{" "}
+              <button className="text-primary hover:text-primary/80 font-medium transition-colors">Privacy Policy</button>.
+            </p>
           </div>
-
-          <Button variant="outline" size="lg" className="w-full h-11 rounded-lg text-sm font-medium">
-            Continue with Google
-          </Button>
-
-          <p className="text-center text-sm text-muted-foreground">
-            Don't have an account?{" "}
-            <button className="text-primary hover:text-primary/80 font-medium transition-colors">
-              Sign up
-            </button>
-          </p>
         </div>
       </div>
     </div>
