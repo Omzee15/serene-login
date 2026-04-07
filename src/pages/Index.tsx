@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <div className="flex min-h-screen bg-background">
       {/* Video Side */}
-      <div className="hidden lg:flex lg:w-3/5 relative overflow-hidden bg-foreground/5">
+      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden bg-foreground/5">
         <video
           autoPlay
           loop
@@ -30,7 +30,7 @@ const Index = () => {
       </div>
 
       {/* Login Side */}
-      <div className="flex w-full lg:w-2/5 items-center justify-center p-8 sm:p-12 lg:p-16">
+      <div className="flex w-full lg:w-[30%] items-center justify-center p-6 sm:p-10 lg:p-12 m-4 lg:m-6 rounded-2xl border border-border bg-card/50">
         <div className="w-full max-w-sm space-y-8">
           <div className="space-y-6">
             <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
