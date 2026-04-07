@@ -35,7 +35,7 @@ const Index = () => {
           <div className="space-y-4">
             <img src={piLabsLogo} alt="Pi Labs" className="h-8 w-auto" />
             <div className="space-y-2 pt-2">
-              <h1 className="text-3xl font-bold tracking-tight text-foreground leading-tight">
+              <h1 className="text-2xl font-bold tracking-tight text-foreground leading-tight">
                 Innovations for<br />a safer tomorrow
               </h1>
               <p className="text-sm text-muted-foreground">
