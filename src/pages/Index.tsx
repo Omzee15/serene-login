@@ -17,13 +17,13 @@ const Index = () => {
   return (
     <div className="flex min-h-screen bg-muted/50 p-4 lg:p-5 gap-4 lg:gap-5">
       {/* Video Side */}
-      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden rounded-2xl bg-card p-3">
+      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden rounded-2xl bg-card">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-contain rounded-xl"
+          className="w-full h-full object-cover rounded-2xl"
         >
           <source src="/videos/login-bg.mp4" type="video/mp4" />
         </video>
