@@ -14,7 +14,7 @@ const Index = () => {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.currentTime = 7;
+      video.currentTime = 5;
     }
   }, []);
 
